@@ -1,0 +1,113 @@
+# === Python ===
+local/*
+local
+._*
+.DS*
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+
+# Pipenv, Poetry, venv, conda
+pip-log.txt
+pip-delete-this-directory.txt
+poetry.lock
+poetry.toml
+Pipfile.lock
+Pipfile
+*.conda
+*.env
+*.venv
+
+# MyPy, Pyre, Pylint, Pytype
+.mypy_cache/
+.pyre/
+.pytype/
+.cache/
+coverage.xml
+coverage/
+
+# IPython and Jupyter
+.ipynb_checkpoints/
+*.ipynb~
+*.nbconvert.ipynb
+
+# Shapefiles and related (ESRI)
+*.shp
+*.shx
+*.dbf
+*.prj
+*.sbn
+*.sbx
+*.fbn
+*.fbx
+*.ain
+*.aih
+*.ixs
+*.mxs
+*.atx
+*.cpg
+*.qix
+
+# GeoTIFF and raster formats
+*.tif
+*.tiff
+*.tfw
+*.ovr
+*.aux.xml
+
+# Raster datasets and metadata
+*.img
+*.hdr
+*.bil
+*.blw
+*.bpw
+*.grd
+*.nc
+*.asc
+*.vrt
+
+# Spatialite / geopackage / database
+*.sqlite
+*.gpkg
+*.gdb
+*.mdb
+
+# QGIS and GIS software files
+*.qgz
+*.qgs~
+*.qml
+*.qgd
+*.qgf
+
+# Mapbox / TileMill / MBTiles
+*.mbtiles
+
+# General data files
+*.csv
+*.geojson
+*.json
+*.kml
+*.gml
+*.xml
+*.log
+
+# Large or temporary files
+*.zip
+*.tar.gz
+*.rar
+*.bak
+*.tmp
+*.aux
+*.lock

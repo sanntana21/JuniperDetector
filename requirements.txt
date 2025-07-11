@@ -1,0 +1,15 @@
+rasterio
+geopandas
+numpy
+pandas
+shapely
+torch
+torchvision
+omegaconf
+fvcore
+cloudpickle
+pycocotools
+openpyxl
+opencv-python
+# Install Detectron2
+git+https://github.com/facebookresearch/detectron2.git
