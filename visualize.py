@@ -6,16 +6,13 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import argparse
 
-mode_map = {
-    0: "Train",
-    1: "Val",
-    2: "Test"
-}
+
+mode_map = {0: "Train", 1: "Val", 2: "Test", 3: "FieldWork"}
 
 def main():
     parser = argparse.ArgumentParser(description="Selecciona el modo de ejecución.")
     parser.add_argument(
-        "--mode", type=int, choices=[0, 1, 2], default=0,
+        "--mode", type=int, choices=[0, 1, 2, 3], default=0,
         help="Modo: 0 = Train (por defecto), 1 = Val, 2 = Test"
     )
     args = parser.parse_args()
@@ -30,10 +27,19 @@ def main():
         print("Visualizado validación...")
     elif mode_str == "Test":
         print("Visualizado prueba...")
+    elif mode_str == "FieldWork":
+        print("Visualizando Field Work")
+    else:
+        raise ValueError("El modo seleccionado no es valido.")
 
     # --- Settings ---
-    annotations_path = f"./Photo_Interpretation_Data/{mode_str}/Annotations/{mode_str}_updated.json"
-    images_path = f"./Photo_Interpretation_Data/{mode_str}/Images"
+    if args.mode < 3:
+        annotations_path = f"./Photo_Interpretation_Data/{mode_str}/Annotations/{mode_str}_updated.json"
+        images_path = f"./Photo_Interpretation_Data/{mode_str}/Images"
+    else:
+        annotations_path = "./Field_Work_Data/External_Val_Data/Annotations/Shapefiles/FieldWork.json"
+        #annotations_path = "./Field_Work_Data/External_Val_Data/Prueba/FieldWork.json"
+        images_path = "./Field_Work_Data/External_Val_Data/Images"
 
     # Load COCO JSON
     with open(annotations_path) as f:
@@ -51,7 +57,7 @@ def main():
     anns = [ann for ann in coco["annotations"] if ann["image_id"] == image_id]
 
     # Plot
-    fig, ax = plt.subplots(1, figsize=(10, 10))
+    _, ax = plt.subplots(1, figsize=(10,10))
     ax.imshow(image)
 
     for ann in anns:
