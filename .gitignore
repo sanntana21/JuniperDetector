@@ -111,3 +111,7 @@ coverage/
 *.tmp
 *.aux
 *.lock
+
+#Others
+*.swp
+.pre-commit-config.yaml
