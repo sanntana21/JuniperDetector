@@ -112,7 +112,7 @@ def shapefiles_to_coco_json(directory: str,  img_w=442, img_h=338, min_size=1.0)
         "annotations": [],
     }
 
-    image_id = 0
+    # image_id = 0
     ann_id = 0
     for file in os.listdir(directory):
         if file.endswith(".shp"):
@@ -122,11 +122,12 @@ def shapefiles_to_coco_json(directory: str,  img_w=442, img_h=338, min_size=1.0)
             # Compute global bounds for normalization
             bounds = gdf.total_bounds 
             
+            image_id = int(file_id)
             # Example: assume each shapefile corresponds to one image
             dataset["images"].append(
                 {
                     "id": image_id,
-                    "file_name": f"Img_{file_id}.tif",
+                    "file_name": f"Img_{file_id}.jpg",
                     "width": 422,  # TODO: replace with real values if available
                     "height": 338,
                     "date_captured": datetime.now().isoformat(),
@@ -150,8 +151,8 @@ def shapefiles_to_coco_json(directory: str,  img_w=442, img_h=338, min_size=1.0)
                     "width": bbox[2],
                     "height": bbox[3]
                 })
-                ann_id += 1
-            image_id += 1
+                
+            
 
     return dataset
 
@@ -168,7 +169,6 @@ def main():
         default=0,
         help="Modo: 0 = Train (por defecto), 1 = Val, 2 = Test, 3 = FieldWork (Shapefiles)",
     )
-
     args = parser.parse_args()
 
     mode_str = mode_map[args.mode]
@@ -185,13 +185,13 @@ def main():
         print("Ejecutando transformacion de Shapefiles (FieldWork)")
     else:
         raise ValueError("El modo seleccionado no es valido.")
-
+    
     new_annotations = []
     
     # Example usage:
     if mode_str == "FieldWork":
 
-        annotations_dir = "./Field_Work_Data/External_Val_Data/Annotations/Shapefiles"
+        annotations_dir = "./Field_Work_Data_jpg/External_Val_Data/Annotations/Shapefiles"
         #annotations_dir = "./Field_Work_Data/External_Val_Data/Prueba"
         #tif_dir = "./Field_Work_Data/External_Val_Data/Images"
 
@@ -202,13 +202,13 @@ def main():
         with open(out_path, "w") as f:
             json.dump(dataset, f, indent=2)
     else:
-
         # --- Settings ---
-        annotations_dir = f"./Photo_Interpretation_Data/{mode_str}/Annotations"
+        annotations_dir = f"./Photo_Interpretation_Data_jpg/{mode_str}/Annotations"
         # images_dir = f"./Photo_Interpretation_Data/{mode_str}/Images"
         # shapefiles_dir = f"./Photo_Interpretation_Data/{model_str}/Annotations/Shapefiles"
 
-        coco_path = os.path.join(annotations_dir, f"{mode_str}_updated.json")
+        coco_path = os.path.join(annotations_dir, f"{mode_str}.json")
+        out_path = os.path.join(annotations_dir, f"{mode_str}_updated.json")
 
         # --- Load existing COCO JSON ---
         with open(coco_path) as f:
@@ -218,6 +218,8 @@ def main():
         # filename_to_id = {img["file_name"]: img["id"] for img in coco["images"]}
 
         # --- Initialize ---
+        
+        coco["images"] = [{k:(v if k != "file_name" else v.replace("tif","jpg")) for k,v in img.items()} for img in coco["images"]]
         ann_id = 0
         anns = [ann for ann in coco["annotations"]]
 
@@ -237,3 +239,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+

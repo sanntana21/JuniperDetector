@@ -34,12 +34,12 @@ def main():
 
     # --- Settings ---
     if args.mode < 3:
-        annotations_path = f"./Photo_Interpretation_Data/{mode_str}/Annotations/{mode_str}_updated.json"
-        images_path = f"./Photo_Interpretation_Data/{mode_str}/Images"
+        annotations_path = f"./Photo_Interpretation_Data_jpg/{mode_str}/Annotations/{mode_str}_updated.json"
+        images_path = f"./Photo_Interpretation_Data_jpg/{mode_str}/Images"
     else:
-        annotations_path = "./Field_Work_Data/External_Val_Data/Annotations/Shapefiles/FieldWork.json"
+        annotations_path = "./Field_Work_Data_jpg/External_Val_Data/Annotations/Shapefiles/FieldWork.json"
         #annotations_path = "./Field_Work_Data/External_Val_Data/Prueba/FieldWork.json"
-        images_path = "./Field_Work_Data/External_Val_Data/Images"
+        images_path = "./Field_Work_Data_jpg/External_Val_Data/Images"
 
     # Load COCO JSON
     with open(annotations_path) as f:
