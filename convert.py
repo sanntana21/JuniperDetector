@@ -213,6 +213,7 @@ def main():
         # --- Load existing COCO JSON ---
         with open(coco_path) as f:
             coco = json.load(f)
+        # print(coco_path, ":" , len(coco))
 
         # Build index of image file names → image IDs
         # filename_to_id = {img["file_name"]: img["id"] for img in coco["images"]}

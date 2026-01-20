@@ -14,12 +14,13 @@ if [ -z "$LOCAL_ROOT" ]; then
 fi
 
 # Crear estructura remota
-ssh ${USER}@${SERVER} "mkdir -p $DEST/annotations $DEST/train2017 $DEST/val2017"
+ssh ${USER}@${SERVER} "mkdir -p $DEST/annotations $DEST/train2017 $DEST/val2017 $DEST/test2017"
 
 # Subir anotaciones filtradas
 echo "Subiendo anotaciones actualizadas..."
 scp "$LOCAL_ROOT/Train/Annotations/"*"_updated.json" ${USER}@${SERVER}:$DEST/annotations/instances_train2017.json
 scp "$LOCAL_ROOT/Val/Annotations/"*"_updated.json" ${USER}@${SERVER}:$DEST/annotations/instances_val2017.json
+scp "$LOCAL_ROOT/Test/Annotations/"*"_updated.json" ${USER}@${SERVER}:$DEST/annotations/instances_test2017.json
 
 # Subir imágenes
 echo "Subiendo imágenes de entrenamiento..."
@@ -27,6 +28,9 @@ scp -r "$LOCAL_ROOT/Train/Images/"* ${USER}@${SERVER}:$DEST/train2017/
 
 echo "Subiendo imágenes de validación..."
 scp -r "$LOCAL_ROOT/Val/Images/"* ${USER}@${SERVER}:$DEST/val2017/
+
+echo "Subiendo imágenes de entrenamiento..."
+scp -r "$LOCAL_ROOT/Test/Images/"* ${USER}@${SERVER}:$DEST/test2017/
 
 echo "Transferencia completada."
 
