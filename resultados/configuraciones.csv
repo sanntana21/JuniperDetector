@@ -1,0 +1,22 @@
+log_bytes,experiment,variant,archs,seed_arch,seed_epochs,ul_epochs,ul_imgsz,ul_batch,ul_patience,ul_data,ul_model,ul_task
+115.0,juniperus_btm_heterogeneous_20260824_090208,,,,,,,,,,,
+2973413.0,juniperus_btm_heterogeneous_20260824_091248,heterogeneous,"E1_scale=yolov8n.pt, E2_illum=yolo11n.pt, E3_geom=yolov9t.pt",yolov8n.pt,50.0,50,448,16,20,/mnt/homeGPU/asantana/model_soup/dataset_yolo/data.yaml,yolov8n.pt,detect
+2310.0,juniperus_btm_heterogeneous_20260824_092305,heterogeneous,"E1_scale=yolov8n.pt, E2_illum=yolo11n.pt, E3_geom=yolov9t.pt",yolov8n.pt,50.0,,,,,,,
+1883.0,juniperus_btm_heterogeneous_20260824_191936,heterogeneous,"E1_scale=yolov8n.pt, E2_illum=yolo11n.pt, E3_geom=yolov9t.pt",yolov8n.pt,50.0,,,,,,,
+114.0,juniperus_btm_homogeneous_20260824_090007,,,,,,,,,,,
+2293967.0,juniperus_btm_homogeneous_20260824_103026,homogeneous,"E1_scale=yolov8n.pt, E2_illum=yolov8n.pt, E3_geom=yolov8n.pt",yolov8n.pt,50.0,50,448,16,20,/mnt/homeGPU/asantana/model_soup/dataset_yolo/data.yaml,yolov8n.pt,detect
+1511501.0,juniperus_seg_by_region_20260828_114011,by_region,"E_region0=yolov8n-seg.pt, E_region1=yolov8n-seg.pt",yolov8n-seg.pt,50.0,50,448,16,20,/mnt/homeGPU/asantana/model_soup/dataset_yolo_seg/data.yaml,yolov8n-seg.pt,segment
+2267869.0,juniperus_seg_by_region_20260831_073029,by_region,"E_region0=yolov8n-seg.pt, E_region1=yolov8n-seg.pt",yolov8n-seg.pt,50.0,50,448,16,30,/mnt/homeGPU/asantana/model_soup/dataset_yolo_seg/data.yaml,yolov8n-seg.pt,segment
+2953573.0,juniperus_seg_by_size_20260828_072323,by_size,"E_small=yolov8n-seg.pt, E_medium=yolov8n-seg.pt, E_large=yolov8n-seg.pt",yolov8n-seg.pt,50.0,50,448,16,20,/mnt/homeGPU/asantana/model_soup/dataset_yolo_seg/data.yaml,yolov8n-seg.pt,segment
+2954376.0,juniperus_seg_by_size_20260828_151237,by_size,"E_small=yolov8n-seg.pt, E_medium=yolov8n-seg.pt, E_large=yolov8n-seg.pt",yolov8n-seg.pt,50.0,50,448,16,20,/mnt/homeGPU/asantana/model_soup/dataset_yolo_seg/data.yaml,yolov8n-seg.pt,segment
+2954048.0,juniperus_seg_by_size_20260828_175314,by_size,"E_small=yolov8n-seg.pt, E_medium=yolov8n-seg.pt, E_large=yolov8n-seg.pt",yolov8n-seg.pt,50.0,50,448,16,20,/mnt/homeGPU/asantana/model_soup/dataset_yolo_seg/data.yaml,yolov8n-seg.pt,segment
+2953708.0,juniperus_seg_by_size_20260828_180050,by_size,"E_small=yolov8n-seg.pt, E_medium=yolov8n-seg.pt, E_large=yolov8n-seg.pt",yolov8n-seg.pt,50.0,50,448,16,20,/mnt/homeGPU/asantana/model_soup/dataset_yolo_seg/data.yaml,yolov8n-seg.pt,segment
+2954023.0,juniperus_seg_by_size_20260828_223540,by_size,"E_small=yolov8n-seg.pt, E_medium=yolov8n-seg.pt, E_large=yolov8n-seg.pt",yolov8n-seg.pt,50.0,50,448,16,20,/mnt/homeGPU/asantana/model_soup/dataset_yolo_seg/data.yaml,yolov8n-seg.pt,segment
+2953673.0,juniperus_seg_by_size_20260829_002259,by_size,"E_small=yolov8n-seg.pt, E_medium=yolov8n-seg.pt, E_large=yolov8n-seg.pt",yolov8n-seg.pt,50.0,50,448,16,20,/mnt/homeGPU/asantana/model_soup/dataset_yolo_seg/data.yaml,yolov8n-seg.pt,segment
+2603102.0,juniperus_seg_by_size_20260830_163740,by_size,"E_small=yolov8n-seg.pt, E_medium=yolov8n-seg.pt, E_large=yolov8n-seg.pt",yolov8n-seg.pt,50.0,50,448,16,20,/mnt/homeGPU/asantana/model_soup/dataset_yolo_seg/data.yaml,yolov8n-seg.pt,segment
+2672473.0,juniperus_seg_by_size_20260830_164608,by_size,"E_small=yolov8n-seg.pt, E_medium=yolov8n-seg.pt, E_large=yolov8n-seg.pt",yolov8n-seg.pt,50.0,50,448,16,20,/mnt/homeGPU/asantana/model_soup/dataset_yolo_seg/data.yaml,yolov8n-seg.pt,segment
+3916942.0,juniperus_seg_by_size_20260830_202803,by_size,"E_small=yolov8n-seg.pt, E_medium=yolov8n-seg.pt, E_large=yolov8n-seg.pt",yolov8n-seg.pt,50.0,50,448,16,30,/mnt/homeGPU/asantana/model_soup/dataset_yolo_seg/data.yaml,yolov8n-seg.pt,segment
+4901076.0,juniperus_seg_by_size_20260830_221329,by_size,"E_small=yolov8n-seg.pt, E_medium=yolov8n-seg.pt, E_large=yolov8n-seg.pt",yolo11l-seg.pt,50.0,50,640,16,30,/mnt/homeGPU/asantana/model_soup/dataset_yolo_seg/data.yaml,yolo11l-seg.pt,segment
+,seg_smoke_test_by_region,,,,,,,,,,,
+,seg_smoke_test_by_size,,,,,,,,,,,
+,smoke_test_heterogeneous,,,,,,,,,,,

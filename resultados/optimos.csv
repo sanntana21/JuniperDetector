@@ -1,0 +1,89 @@
+exp,split,mec,suelo,thr,f1,f1_025,delta,exacto,bate_ref
+Región 1a ejecución,field_work,Ensemble de expertos,0.25,0.25,80.13917077413744,80.13917077413744,0.0,False,True
+Región 1a ejecución,field_work,Ens. pesos por fiabilidad,0.15,0.15,79.91517721902453,75.79092159559835,4.12425562342618,False,True
+Región 1a ejecución,field_work,Model merging,0.25,0.25,74.69796341042458,74.69796341042458,0.0,False,False
+Región 1a ejecución,field_work,Modelo único,0.25,0.25,76.35792778649922,76.35792778649922,0.0,False,False
+Región 1a ejecución,field_work,Ensemble no especializado,0.25,0.3,80.16169154228855,79.92895204262878,0.2327394996597718,True,True
+Región 1a ejecución,test,Ensemble de expertos,0.25,0.55,89.3455098934551,83.75,5.595509893455102,True,True
+Región 1a ejecución,test,Ens. pesos por fiabilidad,0.15,0.3,89.13043478260869,88.7582659808964,0.3721688017122915,True,True
+Región 1a ejecución,test,Model merging,0.25,0.35,88.70229007633587,88.07069219440353,0.6315978819323362,True,True
+Región 1a ejecución,test,Modelo único,0.25,0.4,86.66164280331576,84.64730290456431,2.0143398987514445,True,False
+Región 1a ejecución,test,Ensemble no especializado,0.25,0.45,88.62275449101796,85.61872909698997,3.004025394027991,True,True
+Región canónica,field_work,Ensemble de expertos,0.25,0.25,80.52021487135991,80.52021487135991,0.0,False,True
+Región canónica,field_work,Ens. pesos por fiabilidad,0.15,0.15,80.41116005873717,76.2555517594807,4.155608299256471,False,True
+Región canónica,field_work,Model merging,0.25,0.25,77.91861240827217,77.91861240827217,0.0,False,True
+Región canónica,field_work,Modelo único,0.25,0.25,80.50979173142679,80.50979173142679,0.0,False,True
+Región canónica,field_work,Ensemble no especializado,0.25,0.25,77.63347763347764,77.63347763347764,0.0,False,True
+Región canónica,test,Ensemble de expertos,0.25,0.55,89.25373134328358,83.80716934487022,5.446561998413358,True,True
+Región canónica,test,Ens. pesos por fiabilidad,0.15,0.25,88.42257597684515,88.42257597684515,0.0,True,True
+Región canónica,test,Model merging,0.25,0.5,89.28850664581705,87.59744861800142,1.6910580278156289,True,True
+Región canónica,test,Modelo único,0.25,0.5,90.03115264797509,86.90807799442896,3.1230746535461265,True,True
+Región canónica,test,Ensemble no especializado,0.25,0.5,87.98775822494261,83.87925497752087,4.108503247421737,True,True
+Entrenamiento conjunto,field_work,Ensemble de expertos,0.25,0.3,80.60046189376442,80.5739514348786,0.026510458885823596,True,True
+Entrenamiento conjunto,field_work,Ens. pesos por fiabilidad,0.1,0.1,80.6581986143187,55.17532741867343,25.482871195645274,False,True
+Entrenamiento conjunto,field_work,Model merging,0.25,0.25,79.19334186939821,79.19334186939821,0.0,False,True
+Entrenamiento conjunto,field_work,Modelo único,0.25,0.25,76.35792778649922,76.35792778649922,0.0,False,False
+Entrenamiento conjunto,field_work,Ensemble no especializado,0.25,0.35,81.25530110262935,79.83109786388476,1.4242032387445818,True,True
+Entrenamiento conjunto,test,Ensemble de expertos,0.25,0.55,89.31297709923665,83.5096453018046,5.803331797432051,True,True
+Entrenamiento conjunto,test,Ens. pesos por fiabilidad,0.1,0.18,89.158453373768,79.08208296557812,10.076370408189874,True,True
+Entrenamiento conjunto,test,Model merging,0.25,0.4,90.05315110098708,87.91519434628977,2.1379567546973135,True,True
+Entrenamiento conjunto,test,Modelo único,0.25,0.4,86.66164280331576,84.64730290456431,2.0143398987514445,True,False
+Entrenamiento conjunto,test,Ensemble no especializado,0.25,0.55,88.72403560830861,79.49454336588168,9.229492242426929,True,True
+"Tamaño, natural 50 ép.",field_work,Ensemble de expertos,0.25,0.25,76.55440414507773,76.55440414507773,0.0,False,False
+"Tamaño, natural 50 ép.",field_work,Ens. pesos por fiabilidad,0.05,0.05,76.26279300099043,54.72554684275691,21.537246158233515,False,False
+"Tamaño, natural 50 ép.",field_work,Model merging,0.05,0.05,52.81035179943389,28.042843232716653,24.767508566717236,False,False
+"Tamaño, natural 50 ép.",field_work,Modelo único,0.25,0.25,78.19862809424396,78.19862809424396,0.0,False,True
+"Tamaño, natural 50 ép.",field_work,Ensemble no especializado,0.25,0.25,61.45915939730373,61.45915939730373,0.0,False,False
+"Tamaño, natural 50 ép.",test,Ensemble de expertos,0.02,0.35,87.1833084947839,86.5398167723749,0.6434917224089958,True,False
+"Tamaño, natural 50 ép.",test,Ens. pesos por fiabilidad,0.02,0.12,85.71428571428571,76.95035460992908,8.76393110435663,True,False
+"Tamaño, natural 50 ép.",test,Model merging,0.05,0.05,73.38983050847457,54.33403805496828,19.055792453506292,False,False
+"Tamaño, natural 50 ép.",test,Modelo único,0.02,0.5,86.1776061776062,83.07493540051681,3.1026707770893864,True,False
+"Tamaño, natural 50 ép.",test,Ensemble no especializado,0.02,0.15,87.30741012472487,83.0,4.307410124724868,True,False
+"Tamaño, cant. igualada 50",field_work,Ensemble de expertos,0.25,0.25,74.78500171998625,74.78500171998625,0.0,False,False
+"Tamaño, cant. igualada 50",field_work,Ens. pesos por fiabilidad,0.05,0.05,74.81865284974093,40.89219330855018,33.926459541190745,False,False
+"Tamaño, cant. igualada 50",field_work,Model merging,0.25,0.25,13.256180957390848,13.256180957390848,0.0,False,False
+"Tamaño, cant. igualada 50",field_work,Modelo único,0.25,0.25,78.19862809424396,78.19862809424396,0.0,False,True
+"Tamaño, cant. igualada 50",field_work,Ensemble no especializado,0.25,0.25,59.22330097087378,59.22330097087378,0.0,False,False
+"Tamaño, cant. igualada 50",test,Ensemble de expertos,0.25,0.25,87.47252747252749,87.47252747252749,0.0,False,False
+"Tamaño, cant. igualada 50",test,Ens. pesos por fiabilidad,0.05,0.08,87.99392097264437,62.97786720321932,25.016053769425056,True,True
+"Tamaño, cant. igualada 50",test,Model merging,0.25,0.25,25.790139064475348,25.790139064475348,0.0,False,False
+"Tamaño, cant. igualada 50",test,Modelo único,0.25,0.5,86.1776061776062,83.07493540051681,3.1026707770893864,True,False
+"Tamaño, cant. igualada 50",test,Ensemble no especializado,0.25,0.25,81.98653198653197,81.98653198653197,0.0,False,False
+"Tamaño, natural 100 ép.",field_work,Ensemble de expertos,0.25,0.25,76.84761281883586,76.84761281883586,0.0,False,False
+"Tamaño, natural 100 ép.",field_work,Ens. pesos por fiabilidad,0.05,0.05,75.33783783783785,52.71186440677968,22.62597343105817,False,False
+"Tamaño, natural 100 ép.",field_work,Model merging,0.25,0.25,20.515411824153613,20.515411824153613,0.0,False,False
+"Tamaño, natural 100 ép.",field_work,Modelo único,0.25,0.25,80.50979173142679,80.50979173142679,0.0,False,True
+"Tamaño, natural 100 ép.",field_work,Ensemble no especializado,0.25,0.25,65.130336229694,65.130336229694,0.0,False,False
+"Tamaño, natural 100 ép.",test,Ensemble de expertos,0.25,0.3,88.08823529411764,86.91983122362869,1.168404070488947,True,True
+"Tamaño, natural 100 ép.",test,Ens. pesos por fiabilidad,0.05,0.05,87.08751793400286,75.38322813345357,11.70428980054929,False,False
+"Tamaño, natural 100 ép.",test,Model merging,0.25,0.25,40.04629629629631,40.04629629629631,0.0,False,False
+"Tamaño, natural 100 ép.",test,Modelo único,0.25,0.5,90.03115264797509,86.90807799442896,3.1230746535461265,True,True
+"Tamaño, natural 100 ép.",test,Ensemble no especializado,0.25,0.25,85.00000000000001,85.00000000000001,0.0,False,False
+"Tamaño, modelo grande 100",field_work,Ensemble de expertos,0.25,0.25,76.64747280870122,76.64747280870122,0.0,False,False
+"Tamaño, modelo grande 100",field_work,Ens. pesos por fiabilidad,0.08,0.08,75.4654255319149,54.0244416350611,21.4409838968538,False,False
+"Tamaño, modelo grande 100",field_work,Model merging,0.25,0.25,35.5782628889921,35.5782628889921,0.0,False,False
+"Tamaño, modelo grande 100",field_work,Modelo único,0.25,0.3,79.62172056131787,79.37536829699468,0.24635226432319257,True,True
+"Tamaño, modelo grande 100",field_work,Ensemble no especializado,0.25,0.25,64.30456087448172,64.30456087448172,0.0,False,False
+"Tamaño, modelo grande 100",test,Ensemble de expertos,0.25,0.4,86.88524590163934,84.78260869565216,2.102637205987179,True,False
+"Tamaño, modelo grande 100",test,Ens. pesos por fiabilidad,0.08,0.08,85.45326774420238,75.45454545454545,9.998722289656925,False,False
+"Tamaño, modelo grande 100",test,Model merging,0.25,0.25,55.7948717948718,55.7948717948718,0.0,False,False
+"Tamaño, modelo grande 100",test,Modelo único,0.25,0.55,88.7843137254902,84.57446808510637,4.2098456403838185,True,True
+"Tamaño, modelo grande 100",test,Ensemble no especializado,0.25,0.25,83.48106365834005,83.48106365834005,0.0,False,False
+DA heterogénea,field_work,Ensemble de expertos,0.25,0.3,81.87066974595842,81.56241464080853,0.30825510514989674,True,True
+DA heterogénea,field_work,Ens. pesos por fiabilidad,0.1,0.1,81.92009198045417,59.02864259028643,22.891449390167743,False,True
+DA heterogénea,field_work,Modelo único,0.25,0.25,74.23494570582429,74.23494570582429,0.0,False,False
+DA heterogénea,field_work,Ensemble no especializado,0.25,0.25,82.87153652392948,82.87153652392948,0.0,False,True
+DA heterogénea,test,Ensemble de expertos,0.25,0.55,90.11152416356876,85.07821901323706,5.0333051503316995,True,True
+DA heterogénea,test,Ens. pesos por fiabilidad,0.1,0.18,89.94082840236686,82.960413080895,6.980415321471867,True,True
+DA heterogénea,test,Modelo único,0.25,0.4,86.75078864353313,86.64206642066421,0.10872222286891997,True,False
+DA heterogénea,test,Ensemble no especializado,0.25,0.55,90.56047197640116,83.1199068684517,7.4405651079494675,True,True
+DA homogénea,field_work,Ensemble de expertos,0.05,0.35,81.26064735945485,80.45634920634922,0.8042981531056341,True,True
+DA homogénea,field_work,Ens. pesos por fiabilidad,0.02,0.12,81.44329896907216,60.13928717738632,21.304011791685838,True,True
+DA homogénea,field_work,Model merging,0.05,0.05,79.19109026963659,71.01289134438305,8.17819892525354,False,True
+DA homogénea,field_work,Modelo único,0.05,0.18,75.24813895781638,74.23494570582429,1.0131932519920923,True,False
+DA homogénea,field_work,Ensemble no especializado,0.25,0.3,81.56206415620643,81.43869782095038,0.12336633525605123,True,True
+DA homogénea,test,Ensemble de expertos,0.25,0.6,89.70251716247141,80.61051441492368,9.092002747547724,True,True
+DA homogénea,test,Ens. pesos por fiabilidad,0.1,0.2,89.66565349544072,83.63324764353041,6.032405851910312,True,True
+DA homogénea,test,Model merging,0.25,0.25,89.7025171624714,89.7025171624714,0.0,False,True
+DA homogénea,test,Modelo único,0.25,0.4,86.75078864353313,86.64206642066421,0.10872222286891997,True,False
+DA homogénea,test,Ensemble no especializado,0.25,0.6,88.39354342813222,81.3441483198146,7.049395108317626,True,True

@@ -1,15 +1,15 @@
-rasterio
-geopandas
+# Análisis y evaluación
 numpy
 pandas
+scipy
 shapely
-torch
-torchvision
-omegaconf
-fvcore
-cloudpickle
-pycocotools
-openpyxl
+matplotlib
+Pillow
 opencv-python
-# Install Detectron2
-git+https://github.com/facebookresearch/detectron2.git
+scikit-image
+pycocotools
+
+# Entrenamiento
+ultralytics
+torch
+ensemble-boxes
